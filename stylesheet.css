@@ -340,6 +340,10 @@ span {
     
 }
 
+.grid-img{
+    cursor: pointer;
+}
+
 .cta-btn:hover{
     color: black;
 }
