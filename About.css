@@ -369,7 +369,7 @@ align-items: center;
 .Footer{
     width: 100%;
     height:285px;
-    background-color: #2C1637;
+    background-color: #553264;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -492,7 +492,7 @@ margin-top: 25px;
 
     .banner {
         width: 100%;
-        background-color:#2C1637;
+        background-color:#553264;
         display: flex;
         color: white;
     }
@@ -501,7 +501,7 @@ margin-top: 25px;
         width: 33%;
         height: 10px;
         margin: 20px 70px 45px 70px;
-        background-color:2C1637 ;
+        background-color:#553264 ;
         color: white;
         display: flex;
         animation: content-load 900ms ease-in;
@@ -739,7 +739,7 @@ margin-top: 25px;
       .Footer{
         width: 100%;
         height: 800px;
-        background-color: #040F2E;
+        background-color: #553264;
         display: flex;
         align-items: flex-start;
         justify-content:space-evenly;
