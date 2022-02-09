@@ -929,7 +929,7 @@ left: 30;
 .blog-post{
     width: 23%;
     height: 400px;
-    background-color: #e0dddd;
+    background-color: #6f9bc0d3;
     border-radius: 20px;
     position: relative;
     transition: all .2s ease-in-out; 
@@ -1005,7 +1005,7 @@ left: 30;
 .sm-icon{
     width: 80px;
     height: 80px;
-    background-color: #553264;
+    background-color: #6f9bc0d3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1269,7 +1269,7 @@ h1 {
 
 .reveal2 {
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 2s ease;
 
 }
 
@@ -1411,8 +1411,18 @@ display: none;
 }
 
 @media only screen and (max-width: 600px) {
- 
+    .accordion-title{
+        color: black;
+        font-size: 10px;
+    }
 
+    .accordion .accordion-content p {
+        font-size: 7px;
+        font-weight: 300;
+        margin: 2em;
+    }
+    
+    
     
 }
 
@@ -1928,7 +1938,7 @@ align-items: flex-start;
     }
 
     .blog-post h4{
-        font-size: 22px;
+        font-size: 18px;
 
     }
 
