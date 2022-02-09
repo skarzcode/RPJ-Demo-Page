@@ -1820,6 +1820,26 @@ align-items: flex-start;
 
 }
 
+@media only screen and (max-width: 898px) {
+    .faq-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .accordion-title {
+        color: black;
+        font-size: 10px;
+    }
+
+    .accordion .accordion-content p {
+        font-size: 8px;
+        font-weight: 300;
+        margin: 2em;
+    }
+}
+
+
 @media only screen and (max-width: 760px) {
   
 
@@ -1965,17 +1985,7 @@ align-items: flex-start;
 }
 
 @media only screen and (max-width: 500px) {
-   
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-        .accordion-title {
-            color: black;
-            font-size: 10px;
-        }
-
-        .blog-post h4{
-            font-size: 15px;
-        }
-
+    .content-About{
+        height: 580px;
     }
+}
