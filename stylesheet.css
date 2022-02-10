@@ -1635,6 +1635,19 @@ display: none;
      
    }
 
+   .content h1 {
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 25px;
+    animation: nav-load 900ms ease-in;
+}
+
+.content {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
 
    .content-container2 h1{
        font-size: 50px;
