@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #3f2020;
+    background-color: #D2E7E3;
 }
 .banner {
     width: 100%;
@@ -63,7 +63,6 @@ header ul li::before {
 
   .feauture-header h1{
     font-family: 'Domine', serif;
-    background-color: blue;
   }
 
   .feature-content{
@@ -639,17 +638,18 @@ button:hover{
 
 @media only screen and (max-width: 500px) {
     .slidershow{
-        width: 100%;
+        width: 90%;
         height: auto;
         overflow: hidden; 
-        background-color: rgb(105, 102, 103);
+       
 }
 
 .feauture-container{
-    background-color: tomato;
+    background-color: #D2E7E3;
    height: 500px;
    top: 30px;
 }
+
 
 
 
@@ -676,7 +676,7 @@ button:hover{
     height: 200px;
     margin: 10px 0px;
     display: flex;
-    background-color: rgba(250, 250, 245, 0.836);
+    background-color: #D2E7E3;
 }
 
 .slide-navigation{
@@ -685,6 +685,16 @@ button:hover{
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+}
+
+.content-details {
+    width: 100%;
+    height: auto;
+    background-color: #D2E7E3;
+    margin: 20 auto;
+    position: relative;
+    top: 60;
+    left: 0;
 }
 
 
