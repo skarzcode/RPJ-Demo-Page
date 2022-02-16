@@ -47,7 +47,7 @@ button {
 /*Section website-banner */
 .banner {
     width: 100%;
-    background-color:#553264;
+    background-color:#2E3533;
     display: flex;
     color: #796589;
 
@@ -109,7 +109,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 5%;
-    background-color: F9F9F9;
+    background-color: #D2E7E3;
     animation: nav-load 1.5s ease-in;
     
 }
@@ -220,7 +220,7 @@ button:hover {
     top:70;
     left: 0;
     width: 5%;
-    background-color:F9F9F9;
+    background-color:#D2E7E3;
     height: 90%;
     color: gray;
     animation: nav-load 1.5s ease-in;
@@ -234,6 +234,7 @@ button:hover {
     left: 0%; 
     font-size: 14px;
     font-weight: bolder;
+    color: black;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg); 
     -moz-transform: rotate(-90deg); 
@@ -948,11 +949,12 @@ left: 30;
 .blog-post{
     width: 23%;
     height: 400px;
-    background-color: #181f1b2d;
+    background-color: #2e3533c2;
     border-radius: 20px;
     position: relative;
     transition: all .2s ease-in-out; 
     cursor: pointer;
+    color: white;
 }
 
 .blog-post:hover{
@@ -973,6 +975,7 @@ left: 30;
     text-underline-offset: 5px;
     top: 330;
     left: 30;
+    color: white;
     
 }
 
@@ -1138,7 +1141,7 @@ left: 30;
 .Footer{
     width: 100%;
     height:285px;
-    background-color:#553264;
+    background-color:#2E3533;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
