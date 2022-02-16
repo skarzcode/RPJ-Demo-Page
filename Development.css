@@ -646,10 +646,11 @@ button:hover{
 
 .feauture-container {
     width: 100%;
-    height: 600px;
-    background-color: rgb(255, 255, 255);
+    height: 500px;
+    background-color: rgb(231, 166, 166);
     padding-top: 0px;
     position: relative;
+    top: 30;
 }
 
 .featured-info {
