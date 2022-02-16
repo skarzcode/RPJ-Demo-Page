@@ -471,7 +471,7 @@ button:hover{
         background-color: #a0d2eb4d;
         margin: 20 auto;
         position: relative;
-        top: 0;
+        top: 100;
         left: 0;
     }
 
@@ -642,15 +642,16 @@ button:hover{
         width: 100%;
         height: auto;
         overflow: hidden; 
-        background-color: cornflowerblue;
-        position: absolute;
-        top: 300;
+        background-color: rgb(105, 102, 103);
 }
 
 .feauture-container{
     background-color: tomato;
    height: 500px;
+   top: 30px;
 }
+
+
 
 .info-text{
     margin: 20px 0;
@@ -662,7 +663,12 @@ button:hover{
 
 .slide img {
     width: 100%;
+    height: auto;
     object-fit: contain;
+}
+
+.slides{
+    height: auto;
 }
 
 .featured-info {
@@ -671,6 +677,14 @@ button:hover{
     margin: 10px 0px;
     display: flex;
     background-color: rgba(250, 250, 245, 0.836);
+}
+
+.slide-navigation{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
 }
 
 
