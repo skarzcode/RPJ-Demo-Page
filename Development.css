@@ -657,6 +657,11 @@ button:hover{
     display: none;
 }
 
+.slide img {
+    width: 100%;
+    object-fit: contain;
+}
+
 
 
 }
