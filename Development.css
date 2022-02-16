@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: #ffffff;
+    background-color: #3f2020;
 }
 .banner {
     width: 100%;
@@ -46,6 +46,11 @@ header ul li::before {
       
   }
 
+  .featured-property{
+      width: 100%;
+      height: auto;
+  }
+
   .feauture-header{
       width: 100%;
       height:auto;
@@ -58,6 +63,7 @@ header ul li::before {
 
   .feauture-header h1{
     font-family: 'Domine', serif;
+    background-color: blue;
   }
 
   .feature-content{
@@ -69,8 +75,10 @@ header ul li::before {
 
   .featured-info{
       width: 100%;
+      height: 200px;
       margin: 35 auto;
       display: flex;
+      background-color: yellow;
   }
 
   .icon-container{
@@ -638,7 +646,7 @@ button:hover{
 
 .feauture-container{
     background-color: tomato;
-   height: 1000px;
+   height: 700px;
 }
 
 .info-text{
