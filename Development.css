@@ -70,7 +70,7 @@ header ul li::before {
       width: 90%;
       height: auto;
       background-color: rgb(158, 142, 142);
-      margin: 0 auto; 
+      margin: 0px; 
   }
 
   .featured-info{
@@ -642,11 +642,14 @@ button:hover{
         width: 370px;
         height: auto;
         overflow: hidden; 
+        background-color: cornflowerblue;
+        position: absolute;
+        top: 270;
 }
 
 .feauture-container{
     background-color: tomato;
-   height: 700px;
+   height: 500px;
 }
 
 .info-text{
