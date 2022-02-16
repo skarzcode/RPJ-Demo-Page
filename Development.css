@@ -639,12 +639,12 @@ button:hover{
 
 @media only screen and (max-width: 500px) {
     .slidershow{
-        width: 370px;
+        width: 100%;
         height: auto;
         overflow: hidden; 
         background-color: cornflowerblue;
         position: absolute;
-        top: 270;
+        top: 300;
 }
 
 .feauture-container{
