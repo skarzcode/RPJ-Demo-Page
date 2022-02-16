@@ -662,6 +662,14 @@ button:hover{
     object-fit: contain;
 }
 
+.featured-info {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0px;
+    display: flex;
+    background-color: rgba(250, 250, 245, 0.836);
+}
+
 
 
 }
