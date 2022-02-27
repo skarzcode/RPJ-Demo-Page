@@ -4,7 +4,7 @@ const modalImg = document.getElementsByClassName("modalImg")[0];
 const modalTxt = document.getElementsByClassName("modalTxt")[0];
 const close = document.getElementById("close");
 const boxImg = document.querySelectorAll(".box-img");
-var galleryImg = ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg","galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg","galleryImg1.jpeg", "galleryImg2.jpeg","galleryImg2.jpeg", "galleryImg3.jpeg","galleryImg1.jpeg", "galleryImg2.jpeg"];
+var galleryImg = ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg", "galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg", "galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg", "galleryImg1.jpeg", "galleryImg2.jpeg"];
 var Content = document.getElementsByClassName("container__content")[0];
 const items = document.querySelectorAll('.accordion button');
 let contentH1 = document.getElementsByClassName("dynamicH1")[0];
@@ -15,45 +15,91 @@ let detailH2 = document.getElementsByClassName("dynamicH2")[0];
 let detailLi = document.querySelectorAll('.dynamicLi');
 let detailP = document.getElementsByClassName("dynamicP2")[0];
 const propertyBtn = document.querySelectorAll('.anchor-button');
-radiobtn = document.getElementById("r1");
+const radiobtn = document.getElementById("r1");
+let aboutContainer = document.getElementsByClassName("about-content-info")[0];
+let aboutH2 = document.getElementsByClassName("DH2")[0];
+let aboutP = document.getElementsByClassName("DP")[0];
+let aboutP2 = document.getElementsByClassName("DP2")[0];
+let aboutP3 = document.getElementsByClassName("DP3")[0];
+const aboutNav = document.querySelectorAll('.nav-toggle2');
+const navHighlight = document.getElementsByClassName("navHighlight")[0];
+let gridImagses = document.querySelectorAll(".grid-img");
+
+
 
 
 
 
 const one = {
-    propertyImg: ["galleryImg1.jpeg","galleryImg2.jpeg","galleryImg3.jpeg","galleryImg2.jpeg"], 
-    h1:"106 BroadWay",
-    h3:"London",
-    p:"1-Bed, 2-Bed from £485,950"
-    };
+    propertyImg: ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg", "galleryImg2.jpeg"],
+    h1: "106 BroadWay",
+    h3: "London",
+    p: "1-Bed, 2-Bed from £485,950"
+};
 
-    const two = {
-        propertyImg: ["hunter2.jpeg","hunter3.jpeg","hunter5.jpeg","hunter7.jpeg"], 
-        h1:"Pavilion",
-        h3:"London",
-        p:"3-Bed House from 550,675"
-        };
+const two = {
+    propertyImg: ["hunter2.jpeg", "hunter3.jpeg", "hunter5.jpeg", "hunter7.jpeg"],
+    h1: "Pavilion",
+    h3: "London",
+    p: "3-Bed House from 550,675"
+};
 
-        const three = {
-            propertyImg: ["sidekix-media-g51F6-WYzyU-unsplash.jpg","francesca-tosolini-hCU4fimRW-c-unsplash.jpg","sidekix-media-0sDzRgrN_pI-unsplash.jpg", "sidekix-media-oCw5_evbWyI-unsplash.jpg"], 
-            h1:"St Martin's Close",
-            h3:"Birmingham",
-            p:"2-Bed from £235,000 "
-            };
 
-            const four = {
-                propertyImg: ["sidekix-media-t294_ZZP2pg-unsplash.jpg","zac-gudakov-lk-APuu-T5A-unsplash.jpg","spacejoy-8wDnylxemkk-unsplash.jpg", "steven-ungermann-1AF5hP6F4tI-unsplash.jpg"], 
-                h1:"The Grand Exchange",
-                h3:"London",
-                p:"1-Bed Apartment, 2-Bed Apartment "
-                };
+const three = {
+    propertyImg: ["sidekix-media-g51F6-WYzyU-unsplash.jpg", "francesca-tosolini-hCU4fimRW-c-unsplash.jpg", "sidekix-media-0sDzRgrN_pI-unsplash.jpg", "sidekix-media-oCw5_evbWyI-unsplash.jpg"],
+    h1: "St Martin's Close",
+    h3: "Birmingham",
+    p: "2-Bed from £235,000 "
+};
 
-                const five = {
-                    propertyImg: ["sidekix-media-1vMz2_MclrM-unsplash.jpg","ralph-ravi-kayden-JDBVXignFdA-unsplash.jpg","sidekix-media-8qNuR1lIv_k-unsplash.jpg", "francesca-tosolini-FX1EbT-jKBQ-unsplash.jpg"], 
-                    h1:"Queen's Court",
-                    h3:"London",
-                    p:"1-Bed Apartment, 2-Bed Apartment "
-                    };
+const four = {
+    propertyImg: ["sidekix-media-t294_ZZP2pg-unsplash.jpg", "zac-gudakov-lk-APuu-T5A-unsplash.jpg", "spacejoy-8wDnylxemkk-unsplash.jpg", "steven-ungermann-1AF5hP6F4tI-unsplash.jpg"],
+    h1: "The Grand Exchange",
+    h3: "London",
+    p: "1-Bed Apartment, 2-Bed Apartment "
+};
+
+const five = {
+    propertyImg: ["sidekix-media-1vMz2_MclrM-unsplash.jpg", "ralph-ravi-kayden-JDBVXignFdA-unsplash.jpg", "sidekix-media-8qNuR1lIv_k-unsplash.jpg", "francesca-tosolini-FX1EbT-jKBQ-unsplash.jpg"],
+    h1: "Queen's Court",
+    h3: "London",
+    p: "1-Bed Apartment, 2-Bed Apartment "
+};
+
+const aboutOne = {
+h2: "WHO WE ARE",
+p: "Regal London is one of London’s leading privately owned mixed-use real estate developers. We specialise in residential-led mixed-use developments and have delivered successful projects across London, from Kensington to Tower Hamlets and from Barnet to Shoreditch.",
+p2: "We focus on residential for sale and build to rent schemes, combined with mixed-use opportunities including hotels, flexible workspaces, retail and logistics, seeking out value and maximising opportunities for our partners from the most unexpected places.",
+p3: "in our approach, we are united by our passion for transforming this great city."
+};
+
+const aboutTwo = {
+    h2: "WHAT WE DO",
+    p: "We specialise in residential-led mixed-use developments and have delivered successful projects across London, from Kensington to Tower Hamlets and from Barnet to Shoreditch. Bespoke design and exceptional quality characterise our developments which are built to unlock value, enhance the local environment and respect local communities.",
+    p2: "Regal London is a fully integrated business operating across the entire lifecycle of the asset, which means that we put the customer at the centre of everything we do, ensuring the delivery of outstanding quality and service at every stage of the pre and post development process. This includes land assembly, land use & planning strategy, stakeholder engagement, sales & marketing, construction, customer care and asset management.",
+    p3: "Our integrated approach means design and delivery is fundamental through the development lifecycle: we believe in creating some of London’s most aesthetic places in which to live, work and play."
+};
+
+const aboutThree = {
+    h2: "Integrated approach",
+    p: "We operate across the entire lifecycle of the asset, with land acquisition, planning, stakeholder engagement, sales & marketing, delivery, customer care and commercial strategy all in-house by our exceptional industry professionals.",
+    p2: "Our integrated business model has supported our continued growth for over 20 years while targeting high quality investments and prioritising sustainable value creation.",
+    p3: "Our highly experienced construction team has a strong and proven track record of delivering major projects from inception through to completion."
+};
+
+const aboutFour = {
+    propertyImg: ["sidekix-media-t294_ZZP2pg-unsplash.jpg", "zac-gudakov-lk-APuu-T5A-unsplash.jpg", "spacejoy-8wDnylxemkk-unsplash.jpg", "steven-ungermann-1AF5hP6F4tI-unsplash.jpg"],
+    h1: "The Grand Exchange",
+    h3: "London",
+    p: "1-Bed Apartment, 2-Bed Apartment "
+};
+
+const aboutFive = {
+    propertyImg: ["sidekix-media-1vMz2_MclrM-unsplash.jpg", "ralph-ravi-kayden-JDBVXignFdA-unsplash.jpg", "sidekix-media-8qNuR1lIv_k-unsplash.jpg", "francesca-tosolini-FX1EbT-jKBQ-unsplash.jpg"],
+    h1: "Queen's Court",
+    h3: "London",
+    p: "1-Bed Apartment, 2-Bed Apartment "
+};
 
 
 
@@ -111,6 +157,72 @@ else if (btn.id == "five"){
 
 
 
+aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
+    e.preventDefault;
+    aboutContainer.classList.remove("containerAnimation");
+    void aboutContainer.offsetWidth;
+    aboutContainer.classList.add("containerAnimation");
+    if (nav.id == "aboutOne") {
+        aboutContent(aboutOne)
+    } else if (nav.id == "aboutTwo") {
+        aboutContent(aboutTwo)
+    } else if (nav.id == "aboutThree") {
+        aboutContent(aboutThree)
+    } else if (nav.id == "aboutFour") {
+        aboutContent(aboutFour)
+    } else if (nav.id == "aboutFive") {
+        aboutContent(aboutFive)
+    };
+
+    if (nav.id == "aboutOne") {
+        colorSwitcher(aboutNav, nav)
+    } else if (nav.id == "aboutTwo") {
+        colorSwitcher(aboutNav, nav)
+    } else if (nav.id == "aboutThree") {
+        colorSwitcher(aboutNav, nav)
+    } else if (nav.id == "aboutFour") {
+        colorSwitcher(aboutNav, nav)
+    } else if (nav.id == "aboutFive") {
+        colorSwitcher(aboutNav, nav)
+    }
+
+    function colorSwitcher(el, elHolder) {
+        for (let C = 0; C < 5; C++) {
+            el[C].style.color = "white"
+        }
+        elHolder.style.color = "Yellow";
+    }
+
+    function aboutContent(el) {
+        aboutH2.innerHTML = el.h2;
+        aboutP.innerHTML = el.p;
+        aboutP2.innerHTML = el.p2;
+        aboutP3.innerHTML = el.p3;
+    }
+}, false));
+
+
+aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
+    e.preventDefault;
+    nav.classList.add("navClicked");
+    void nav.offsetWidth;
+
+
+    nav.classList.remove("navClicked");
+
+}, false));
+
+
+
+
+gridImagses.forEach((link) => link.addEventListener('click', function(){
+    
+    window.open("Developments.html","_self")
+
+}));
+
+
+
 
 
 
@@ -129,9 +241,6 @@ function toggleAccordion(){
 items.forEach((item) => item.addEventListener('click', toggleAccordion))
 
 
-
-
-
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", reveal2);
 function reveal(){
@@ -139,7 +248,7 @@ function reveal(){
 for (var i=0; i< reveals.length; i++){
     var windowHeight = window.innerHeight;
     var revealTOP = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 150;
+    var revealPoint = 0;
 
     if(revealTOP < windowHeight - revealPoint){
         reveals[i].classList.add("active");

@@ -269,7 +269,7 @@ button:hover {
     z-index: 11;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -288,7 +288,9 @@ button:hover {
     
 }
 
-.
+.cta button:hover{
+    color: white;
+}
 
 .content a:hover{
 background-color: transparent;
@@ -358,9 +360,9 @@ span {
 }
 
 .ctaBTN2{
-    width: 250px;
+    width: 200px;
     margin-top: 18px;
-    background:#000000a9;
+    background:#156466;
     font-weight: lighter;
 }
 
@@ -949,8 +951,8 @@ left: 30;
 .blog-post{
     width: 23%;
     height: 400px;
-    background-color: #2e3533c2;
-    border-radius: 20px;
+    background-color: #979494;
+    border-radius: 18px;
     position: relative;
     transition: all .2s ease-in-out; 
     cursor: pointer;
@@ -975,7 +977,7 @@ left: 30;
     text-underline-offset: 5px;
     top: 330;
     left: 30;
-    color: white;
+    color: #FECB9A;
     
 }
 
@@ -1985,15 +1987,18 @@ align-items: flex-start;
     font-family: 'Montserrat', sans-serif;
 }
 
+
     
     .blog-post{
         height: 400px;
         width: 60%;
         margin: 20px;
+        
     }
 
     .blog-post h4{
-        font-size: 18px;
+        font-size: 15px;
+        padding: 10px;
 
     }
 
@@ -2018,6 +2023,7 @@ align-items: flex-start;
     }
         
 }
+
 
 @media only screen and (max-width: 500px) {
     .content-About{
