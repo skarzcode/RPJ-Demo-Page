@@ -24,6 +24,7 @@ let aboutP3 = document.getElementsByClassName("DP3")[0];
 const aboutNav = document.querySelectorAll('.nav-toggle2');
 const navHighlight = document.getElementsByClassName("navHighlight")[0];
 let gridImagses = document.querySelectorAll(".grid-img");
+let mobileProperties = document.querySelectorAll(".property");
 
 
 
@@ -226,6 +227,20 @@ if (link.id == "Property1"){
     window.open("Developments5.html","_self") 
 }
 }));
+
+
+mobileProperties.forEach((link) => link.addEventListener('click', function(){
+   
+    if (link.id == "mobile1"){
+        window.open("Developments.html","_self")
+    } else if (link.id == "mobile2"){
+        window.open("Developments2.html","_self") 
+    }else if (link.id == "mobile3"){
+        window.open("Developments3.html","_self") 
+    }
+    }));
+
+
 
 
 
