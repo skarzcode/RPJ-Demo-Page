@@ -1,23 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Yanone+Kaffeesatz&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 
 body{
     background-color: white;
 }
-.banner {
-    width: 100%;
-    background-color:#2E3533;
-    display: flex;
-    color: #796589;
 
-}
-
-
-.banner2{
-    background-color:#2E3533;
+.bannerTxt{
+    font-size: 10px;
+font-weight: bold;;
+font-family: montserrat, sans-serif;
 }
 
 .empty-space{
@@ -46,6 +41,21 @@ header ul li::before {
       
       
   }
+
+  button {
+    padding: 9px 25px;
+    background-color: #553264;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+}
+
+button:hover {
+  color: white;
+  background-color: #2E3533;
+}
 
   .featured-property{
       width: 100%;
@@ -122,12 +132,13 @@ header ul li::before {
 
   .content-details{
       width: 30%;
-      height: 600px;
+      height: auto;
       background-color: #a0d2eb4d;
       margin: 0 auto;
       position: absolute;
     top: 509    ;
     right: 50;
+    font-size: 14px;
   }
 
   .content-details h2{
@@ -340,11 +351,11 @@ button:hover{
     font-weight: bold;
 }
 
-.Content-container ul {
+.Content-container ul{
     list-style: none;
-  }
-  
-  ul li::before {
+}
+
+.Content-container ul li::before {
     content: "\2022";
     color: #A0D2EB;
     font-weight: bold;
@@ -353,13 +364,19 @@ button:hover{
     margin-left: -1em;
   }
 
+  .footer-ul{
+      list-style: none;
+  }
   
+  
+
+
 
 
 
 .Content-container h3,h4,p{
     padding-left: 12px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "Open Sans", sans-serif;;
 }
 
 .Content-container h3{
@@ -416,9 +433,7 @@ color: black;
     
 }
 
-button{
-    background: #979494;
-}
+
 
 
 .cta-btn::before{
@@ -459,7 +474,18 @@ button:hover{
     justify-content: space-evenly;
     margin-bottom: 1px;
     margin-top: 15px;
+    font-family: "Open Sans", sans-serif;
 }
+
+.bannerTxt2 a:hover{
+    color: yellow;
+}
+
+.footer-nav ul li:hover{
+    color: yellow;
+}
+
+
 
 
 @keyframes hide {
