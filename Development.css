@@ -417,8 +417,8 @@ color: black;
     border-radius: 0px;
     border: 1px solid #553264;
     background: #979494;
-    padding: 14px 0px;
-    font-size: 20px;
+    padding: 5px 0px;
+    font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
     cursor: pointer;
@@ -616,7 +616,7 @@ button:hover{
 
     .cta-btn {
         bottom: 0;
-        left: 10;
+        left: 5;
     }
 
     @media only screen and (max-width: 1000px) {
@@ -704,6 +704,12 @@ button:hover{
         
         .footer-nav li{
             margin-top:20px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
         }
         
       
@@ -794,8 +800,8 @@ button:hover{
 .inner-icon-container {
     width: 100%;
     position: absolute;
-    top:150;
-    left: 10;
+    top:100;
+    left: -30;
     display: flex;
     justify-content: space-evenly;
 }
