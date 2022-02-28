@@ -1647,6 +1647,16 @@ display: none;
     animation: nav-load 900ms ease-in;
 }
 
+.aside{
+    display: none;
+}
+
+.video-container{
+    width: 100%;
+    left: 0%;
+}
+
+
 .content {
     top: 60%;
     left: 50%;

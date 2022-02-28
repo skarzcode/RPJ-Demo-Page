@@ -32,7 +32,7 @@ let gridImagses = document.querySelectorAll(".grid-img");
 
 const one = {
     propertyImg: ["galleryImg1.jpeg", "galleryImg2.jpeg", "galleryImg3.jpeg", "galleryImg2.jpeg"],
-    h1: "106 BroadWay",
+    h1: "105 BroadWay",
     h3: "London",
     p: "1-Bed, 2-Bed from £485,950"
 };
@@ -43,7 +43,6 @@ const two = {
     h3: "London",
     p: "3-Bed House from 550,675"
 };
-
 
 const three = {
     propertyImg: ["sidekix-media-g51F6-WYzyU-unsplash.jpg", "francesca-tosolini-hCU4fimRW-c-unsplash.jpg", "sidekix-media-0sDzRgrN_pI-unsplash.jpg", "sidekix-media-oCw5_evbWyI-unsplash.jpg"],
@@ -213,12 +212,19 @@ aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
 }, false));
 
 
-
-
 gridImagses.forEach((link) => link.addEventListener('click', function(){
-    
+   
+if (link.id == "Property1"){
     window.open("Developments.html","_self")
-
+} else if (link.id == "Property2"){
+    window.open("Developments2.html","_self") 
+}else if (link.id == "Property3"){
+    window.open("Developments3.html","_self") 
+}else if (link.id == "Property4"){
+    window.open("Developments4.html","_self") 
+}else if (link.id == "Property5"){
+    window.open("Developments5.html","_self") 
+}
 }));
 
 
