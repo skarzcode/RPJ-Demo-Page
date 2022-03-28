@@ -67,10 +67,10 @@ const five = {
 };
 
 const aboutOne = {
-h2: "WHO WE ARE",
-p: "Regal London is one of London’s leading privately owned mixed-use real estate developers. We specialise in residential-led mixed-use developments and have delivered successful projects across London, from Kensington to Tower Hamlets and from Barnet to Shoreditch.",
-p2: "We focus on residential for sale and build to rent schemes, combined with mixed-use opportunities including hotels, flexible workspaces, retail and logistics, seeking out value and maximising opportunities for our partners from the most unexpected places.",
-p3: "in our approach, we are united by our passion for transforming this great city."
+    h2: "WHO WE ARE",
+    p: "Regal London is one of London's leading privately owned mixed-use real estate developers. We specialise in residential-led mixed-use developments and have delivered successful projects across London, from Kensington to Tower Hamlets and from Barnet to Shoreditch.",
+    p2: "We focus on residential for sale and build to rent schemes, combined with mixed-use opportunities including hotels, flexible workspaces, retail and logistics, seeking out value and maximising opportunities for our partners from the most unexpected places.",
+    p3: "in our approach, we are united by our passion for transforming this great city."
 };
 
 const aboutTwo = {
@@ -106,52 +106,49 @@ const aboutFive = {
 
 
 
-       
 
-    propertyBtn.forEach((btn) => btn.addEventListener('click', function(){
-        radiobtn.checked = true;
-        if (btn.id == "one"){
-            contentH1.innerHTML= one.h1;
-            contentH3.innerHTML= one.h3;
-            contentP.innerHTML= one.p;
-            for (let i =0; i<contentImg.length; i++){
-                contentImg[i].src = one.propertyImg[i];
-            } 
-    } else if (btn.id == "two"){
-        contentH1.innerHTML= two.h1;
-        contentH3.innerHTML= two.h3;
-        contentP.innerHTML= two.p;
-        for (let i =0; i<contentImg.length; i++){
+
+propertyBtn.forEach((btn) => btn.addEventListener('click', function () {
+    radiobtn.checked = true;
+    if (btn.id == "one") {
+        contentH1.innerHTML = one.h1;
+        contentH3.innerHTML = one.h3;
+        contentP.innerHTML = one.p;
+        for (let i = 0; i < contentImg.length; i++) {
+            contentImg[i].src = one.propertyImg[i];
+        }
+    } else if (btn.id == "two") {
+        contentH1.innerHTML = two.h1;
+        contentH3.innerHTML = two.h3;
+        contentP.innerHTML = two.p;
+        for (let i = 0; i < contentImg.length; i++) {
             contentImg[i].src = two.propertyImg[i];
-}
-} else if (btn.id == "three"){
-    contentH1.innerHTML= three.h1;
-    contentH3.innerHTML= three.h3;
-    contentP.innerHTML= three.p;
-    for (let i =0; i<contentImg.length; i++){
-        contentImg[i].src = three.propertyImg[i];
-}
+        }
+    } else if (btn.id == "three") {
+        contentH1.innerHTML = three.h1;
+        contentH3.innerHTML = three.h3;
+        contentP.innerHTML = three.p;
+        for (let i = 0; i < contentImg.length; i++) {
+            contentImg[i].src = three.propertyImg[i];
+        }
 
-}
-else if (btn.id == "four"){
-    contentH1.innerHTML= four.h1;
-    contentH3.innerHTML= four.h3;
-    contentP.innerHTML= four.p;
-    for (let i =0; i<contentImg.length; i++){
-        contentImg[i].src = four.propertyImg[i];
-}
+    } else if (btn.id == "four") {
+        contentH1.innerHTML = four.h1;
+        contentH3.innerHTML = four.h3;
+        contentP.innerHTML = four.p;
+        for (let i = 0; i < contentImg.length; i++) {
+            contentImg[i].src = four.propertyImg[i];
+        }
 
-}
+    } else if (btn.id == "five") {
+        contentH1.innerHTML = five.h1;
+        contentH3.innerHTML = five.h3;
+        contentP.innerHTML = five.p;
+        for (let i = 0; i < contentImg.length; i++) {
+            contentImg[i].src = five.propertyImg[i];
+        }
 
-else if (btn.id == "five"){
-    contentH1.innerHTML= five.h1;
-    contentH3.innerHTML= five.h3;
-    contentP.innerHTML= five.p;
-    for (let i =0; i<contentImg.length; i++){
-        contentImg[i].src = five.propertyImg[i];
-}
-
-}
+    }
 
 }));
 
@@ -213,32 +210,32 @@ aboutNav.forEach((nav) => nav.addEventListener('click', function (e) {
 }, false));
 
 
-gridImagses.forEach((link) => link.addEventListener('click', function(){
-   
-if (link.id == "Property1"){
-    window.open("Developments.html","_self")
-} else if (link.id == "Property2"){
-    window.open("Developments2.html","_self") 
-}else if (link.id == "Property3"){
-    window.open("Developments3.html","_self") 
-}else if (link.id == "Property4"){
-    window.open("Developments4.html","_self") 
-}else if (link.id == "Property5"){
-    window.open("Developments5.html","_self") 
-}
+gridImagses.forEach((link) => link.addEventListener('click', function () {
+
+    if (link.id == "Property1") {
+        window.open("Developments.html", "_self")
+    } else if (link.id == "Property2") {
+        window.open("Developments2.html", "_self")
+    } else if (link.id == "Property3") {
+        window.open("Developments3.html", "_self")
+    } else if (link.id == "Property4") {
+        window.open("Developments4.html", "_self")
+    } else if (link.id == "Property5") {
+        window.open("Developments5.html", "_self")
+    }   
 }));
 
 
-mobileProperties.forEach((link) => link.addEventListener('click', function(){
-   
-    if (link.id == "mobile1"){
-        window.open("Developments.html","_self")
-    } else if (link.id == "mobile2"){
-        window.open("Developments2.html","_self") 
-    }else if (link.id == "mobile3"){
-        window.open("Developments3.html","_self") 
+mobileProperties.forEach((link) => link.addEventListener('click', function () {
+
+    if (link.id == "mobile1") {
+        window.open("Developments.html", "_self")
+    } else if (link.id == "mobile2") {
+        window.open("Developments2.html", "_self")
+    } else if (link.id == "mobile3") {
+        window.open("Developments3.html", "_self")
     }
-    }));
+}));
 
 
 
@@ -247,14 +244,14 @@ mobileProperties.forEach((link) => link.addEventListener('click', function(){
 
 
 
-function toggleAccordion(){
+function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
 
-    for (let i=0; i <items.length; i++){
+    for (let i = 0; i < items.length; i++) {
         items[i].setAttribute('aria-expanded', 'false')
     }
 
-    if(itemToggle == 'false'){
+    if (itemToggle == 'false') {
         this.setAttribute('aria-expanded', 'true');
     }
 }
@@ -264,37 +261,36 @@ items.forEach((item) => item.addEventListener('click', toggleAccordion))
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", reveal2);
-function reveal(){
+
+function reveal() {
     var reveals = document.querySelectorAll(".reveal")
-for (var i=0; i< reveals.length; i++){
-    var windowHeight = window.innerHeight;
-    var revealTOP = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 0;
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTOP = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 0;
 
-    if(revealTOP < windowHeight - revealPoint){
-        reveals[i].classList.add("active");
-    }
-    else{
-        reveals[i].classList.remove("active");
+        if (revealTOP < windowHeight - revealPoint) {
+            reveals[i].classList.add("active");
+        } else {
+            reveals[i].classList.remove("active");
+        }
     }
 }
-}
 
-function reveal2(){
+function reveal2() {
     var reveals2 = document.querySelectorAll(".reveal2")
-for (var i=0; i< reveals2.length; i++){
-    var windowHeight = window.innerHeight;
-    var revealTOP = reveals2[i].getBoundingClientRect().top;
-    var revealPoint = 150;
+    for (var i = 0; i < reveals2.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTOP = reveals2[i].getBoundingClientRect().top;
+        var revealPoint = 150;
 
-    if(revealTOP < windowHeight - revealPoint){
-        reveals2[i].classList.add("active2");
+        if (revealTOP < windowHeight - revealPoint) {
+            reveals2[i].classList.add("active2");
 
+        } else {
+            reveals2[i].classList.remove("active2");
+        }
     }
-    else{
-        reveals2[i].classList.remove("active2");
-    }
-}
 };
 
 
@@ -303,19 +299,19 @@ for (var i=0; i< reveals2.length; i++){
 
 
 images.forEach((image) => {
-            image.addEventListener("click", () => {
-                modalImg.src = image.src;
-                modal.classList.add("appear");
-                close.addEventListener("click", () =>{
-                    modal.classList.remove("appear");
-                    
-                } );
-                for (let i= 0; i<galleryImg.length; i++){
-                    boxImg[i].src = galleryImg[i];
-                };
-            });
+    image.addEventListener("click", () => {
+        modalImg.src = image.src;
+        modal.classList.add("appear");
+        close.addEventListener("click", () => {
+            modal.classList.remove("appear");
 
-            
+        });
+        for (let i = 0; i < galleryImg.length; i++) {
+            boxImg[i].src = galleryImg[i];
+        };
+    });
+
+
 });
 
 boxImg.forEach((img) => {
@@ -328,9 +324,9 @@ boxImg.forEach((img) => {
 });
 
 
-document.addEventListener("click", function(event){
-    if(event.target.id == "Gallery_images"){
-       
+document.addEventListener("click", function (event) {
+    if (event.target.id == "Gallery_images") {
+
     };
 });
 
