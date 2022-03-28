@@ -1590,11 +1590,15 @@ align-items: flex-start;
 
     .faqs-section{
         height: auto;
+        background-color: rebeccapurple;
+        margin: 20px 0px;
+        height: 700px;
     }
 
     .faq-container{
         margin-top: 20px;
-        height: 90vh;
+        height: 600px;
+        
     }
 
     .empty-space3 {
