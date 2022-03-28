@@ -1588,8 +1588,13 @@ align-items: flex-start;
         
     }
 
+    .faqs-section{
+        height: auto;
+    }
+
     .faq-container{
-        margin-top: 60px;
+        margin-top: 20px;
+        height: 90vh;
     }
 
     .empty-space3 {
